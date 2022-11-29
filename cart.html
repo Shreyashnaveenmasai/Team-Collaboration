@@ -30,7 +30,6 @@
         /* justify-content: center;
         align-items: center; */
         /* border: 2px solid black; */
-        margin-top: 20px;
         margin: auto;
     }
     #main > div div{
@@ -50,6 +49,14 @@
         width: 50%;
         margin: auto;
         text-align: center;
+    }
+    #btmdiv{
+        padding-top: 20px;
+        border-bottom: 2px solid rgb(52, 46, 46);
+        opacity: 0.3;
+    }
+    #totaldiv{
+        justify-content: space-around;
     }
 </style>
 <body>
@@ -77,6 +84,7 @@
         }];
         var cart = localStorage.setItem("cart",JSON.stringify(cartarr));
         var localcart = JSON.parse(localStorage.getItem("cart")) || [];
+        var total = 0;
     if(localcart.length==0){
         var div=document.createElement("div");
         var p = document.createElement("p");
@@ -95,15 +103,25 @@
             var name = document.createElement("p");
             name.innerText = ele.name;
             var price = document.createElement("p");
-            price.innerText = ele.price;
+            price.innerText = ele.price - 0;
+            total = total + ele.price - 0;
             imgdiv.append(img);
             namediv.append(name,price);
             div.append(imgdiv,namediv);
             document.getElementById("main").append(div);
         });
     }
-                var button = document.createElement("button");
-                button.innerText = 'Check Out';
-                document.getElementById("main").append(button);
+    var btmdiv = document.createElement("div");
+    btmdiv.setAttribute("id","btmdiv");
+    var totaldiv = document.createElement("div");
+    totaldiv.setAttribute("id", "totaldiv");
+    var h2 = document.createElement("h2");
+    h2.innerText = "Total";
+    var totalval = document.createElement("h2");
+    totalval.innerText = "$"+ total+".00";
+    var button = document.createElement("button");
+    button.innerText = 'Check Out';
+    totaldiv.append(h2, totalval);
+    document.getElementById("main").append(btmdiv,totaldiv,button);
 
 </script>

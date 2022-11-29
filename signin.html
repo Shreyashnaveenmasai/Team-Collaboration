@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.shopify.com/s/files/1/0248/3473/6191/files/bluefly_ico_new_32x32.png?v=1613180452' rel='icon' type='image/x-icon'/>
+    <title>Account
+        &ndash; Bluefly
+        </title>
+    <style>
+        .section-header{
+            background-color: white; 
+            box-sizing: border-box; 
+            font-family: Futura, sans-serif; 
+            font-size: 16px; letter-spacing: 0.4px; 
+            margin-bottom: 50px; 
+            text-align: center;
+            margin-top: 10%;
+        }
+        .section-header__title{
+            box-sizing: border-box; cursor: auto; 
+            font-family: Tiemann, serif; font-size: 2.375em; 
+            font-weight: 400; letter-spacing: 0em; 
+            line-height: 1; margin: 0px; 
+            text-transform: uppercase;
+            user-select: text;
+            
+        }
+        form{
+            box-sizing: border-box;
+             margin: 0px;
+        }
+        label{
+            box-sizing: border-box; 
+            cursor: pointer; display: 
+            block; font-size: 0.75em; 
+            letter-spacing: 0px; 
+            margin-bottom: 10px; 
+            text-align: left; 
+            text-transform: uppercase;
+        }
+        .input-full{
+            -webkit-font-smoothing: antialiased; appearance: none; 
+            border-color: rgb(232, 232, 225); 
+            border-radius: 0px; 
+            border-style: solid; 
+            border-width: 1px; 
+            display: block;
+             font-family: Futura, sans-serif; font-size: 16px; 
+             letter-spacing: 0.025em; line-height: 1.6; 
+             margin-bottom: 30px; max-width: 100%;
+              padding: 8px 10px;
+             text-rendering: optimizespeed; 
+             text-size-adjust: 100%;
+              width: 418.328px;
+        }
+        .form-vertical {
+                background-color: white; 
+                box-sizing: border-box;
+                 font-family: Futura, sans-serif; 
+                font-size: 16px; 
+                letter-spacing: 0.4px; 
+                user-select: text;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+        .submitcl{
+            
+            appearance: none; background: rgb(17, 17, 17); 
+            border-color: transparent; border-radius: 0px;
+            border-style: solid;
+            border-width: 1px; 
+            color: white; 
+            cursor: pointer; 
+            font-family: Futura, sans-serif; 
+            font-size: 13px; font-weight: 700; letter-spacing: 0.3em; 
+            line-height: 1.42; margin: 0px 0px 30px; 
+            max-width: 100%; 
+            min-width: 90px; overflow: hidden; 
+            padding: 13px 20px; 
+            position: relative; text-rendering: optimizespeed; 
+            text-size-adjust: 100%; text-transform: uppercase; 
+            vertical-align: middle; white-space: normal; 
+            width: 418.328px;
+        }
+        .lab{
+            display: flex;
+            justify-content: space-between;
+        }
+        #customer_register_link{
+            background: transparent;
+             box-sizing: border-box; 
+            color: black; 
+            cursor: pointer; 
+            text-decoration-line: none; 
+            user-select: text;
+        }
+
+          /* small screens */
+          @media only screen and (min-width: 0px) and (max-width: 420px) {
+                .form-vertical{
+                    display: inline;
+                }
+            }
+
+            .errors{
+                background-color: #fff6f6;
+                 border-radius: 0px;
+                  border: 1px solid rgb(208, 46, 46);
+                   box-sizing: border-box; 
+                   color: #d02e2e; 
+                   font-family: Futura, sans-serif; 
+                   font-size: 16px; letter-spacing: 0.4px;
+                    margin-bottom: 15px;
+                 padding: 6px 12px;
+                  user-select: text !important;
+                  text-align: left;
+                  display:none;
+            }
+
+            .errors > ul{
+                box-sizing: border-box;
+                 list-style-image: initial; 
+                 list-style-position: outside;
+                  margin: 0px 0px 0px 20px; 
+                  padding: 0px; 
+                text-rendering: optimizelegibility;
+            }
+
+            .errors > ul > li{
+                box-sizing: border-box;
+                 margin-bottom: 0px;
+            }
+            
+           
+       
+    </style>
+   
+</head>
+<body>
+    <header class="section-header" >
+        <h1 class="section-header__title" >LOGIN</h1>
+      </header>
+      
+      <div class="form-vertical" id="CustomerLoginForm" >
+        
+        <form >
+            <div class="errors" ><ul ><li >Incorrect email or password.</li></ul></div>
+          <label >EMAIL</label>
+          <input autocapitalize="off" autocorrect="off" class="input-full"  id="email"  type="email" required autofocus />
+          <div class="lab">
+            <label >PASSWORD </label>
+            <label >Forgot password? </label>
+          </div>
+          <input class="input-full"  id="password"  type="password"  required autofocus/>
+          <p >
+            <button class="submitcl"  type="submit" >SIGN IN</button>
+          </p>
+          <p >
+            <a  href="signUp.html" id="customer_register_link" >Create account</a>
+          </p>
+        </form>
+      </div>
+</body>
+</html>
+
+<script>
+    
+    let userData = JSON.parse(localStorage.getItem("userData"));
+    document.querySelector("form").addEventListener("submit" , compare);
+
+    function compare(e){
+        e.preventDefault();
+
+        let email =document.querySelector("#email").value
+        let password =document.querySelector("#password").value
+
+        console.log(email,password);
+
+        let isPresent = userData.filter(function(e){
+            return email == e.email && password == e.password;
+        }) 
+        if(isPresent.length == 0){
+            document.querySelector(".errors").style.display = "block"; 
+        }else{
+            window.location.href="index.html"
+        }
+
+    }
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+</head>
+<style>
+    #main{
+        width: 30%;
+        margin: 0 0 0 auto;
+    }
+    #main>div{
+        width: 80%;
+        margin:auto;
+        border-bottom: 1px solid rgb(150, 144, 144);
+        margin-top: 20px;
+    }
+    div+p{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #main>h2{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+</style>
+<body>
+    <div id="main">
+        <h2>Items in Cart</h2>
+    </div>
+</body>
+</html>
+<script>
+    var cartarr = [];
+    if(cartarr.length==0){
+        var div=document.createElement("div");
+        var p = document.createElement("p");
+        p.textContent = "Your cart is currently empty.";
+        document.getElementById("main").append(div,p);
+    }
+    else{
+        cartarr.map(function (ele) {
+        });
+    }
+
+</script>

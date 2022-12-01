@@ -1,127 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
+    <link rel="stylesheet" href="cart.css">
 </head>
 <style>
-    #main{
-        width: 30%;
-        margin: 0 0 0 auto;
-        text-align: center;
-    }
-    #main button{
-        width: 70%;
-        text-align: center;
-        background-color: rgb(41, 30, 30);
-        color: white;
-        font-size: larger;
-        padding: 15px;
-        display: block;
-        margin: auto;
-        border-radius: 5px;
-        margin-top: 20px;
-    }
-    #main>div{
-        display: flex;
-        width: 80%;
-        /* justify-content: center;
-        align-items: center; */
-        /* border: 2px solid black; */
-        margin: auto;
-    }
-    #main > div div{
-        width: 170px;
-        height: 170px;
-        /* margin: auto; */
-    }
-    #main > div img{
-        width: 100%;
-    }
-    #main>div>#namdiv{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #main>div>#namdiv P{
-        width: 50%;
-        margin: auto;
-        text-align: center;
-    }
-    #btmdiv{
-        padding-top: 20px;
-        border-bottom: 2px solid rgb(52, 46, 46);
-        opacity: 0.3;
-    }
-    #totaldiv{
-        justify-content: space-around;
-    }
-</style>
-<body>
-    <div id="main">
-        <h2>Items in Cart</h2>
-    </div>
-</body>
-</html>
-<script>
-        var cartarr = [
-            {
-            img:"https://assets.ajio.com/medias/sys_master/root/20220513/xlLS/627e266eaeb26921af76fb97/-288Wx360H-463292644-grey-MODEL.jpg",
-            name:"Shirt",
-            price:800,
-            },
-            {
-            img: "https://cdn.shopify.com/s/files/1/0752/6435/products/IMG_0123_2653a840-1950-40c4-9534-357696378291.jpg?v=1663818590",
-            name: "Printed Shirt",
-            price: 1000,
-        },
-        {
-            img: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/179f5214-4241-4d21-9126-107890c1c1fa/sb-long-sleeve-skate-t-shirt-zbRRls.png",
-            name: "T shirt",
-            price: 600,
-        }];
-        var cart = localStorage.setItem("cart",JSON.stringify(cartarr));
-        var localcart = JSON.parse(localStorage.getItem("cart")) || [];
-        var total = 0;
-    if(localcart.length==0){
-        var div=document.createElement("div");
-        var p = document.createElement("p");
-        p.textContent = "Your cart is currently empty.";
-        document.getElementById("main").append(div,p);
-    }
-    else{
-        localcart.map(function (ele) {
-            var div=document.createElement("div");
-            var imgdiv = document.createElement("div");
-            imgdiv.setAttribute("id","imgdiv");
-            var img = document.createElement("img");
-            img.setAttribute("src",ele.img);
-            var namediv = document.createElement("div");
-            namediv.setAttribute("id","namdiv");
-            var name = document.createElement("p");
-            name.innerText = ele.name;
-            var price = document.createElement("p");
-            price.innerText = ele.price - 0;
-            total = total + ele.price - 0;
-            imgdiv.append(img);
-            namediv.append(name,price);
-            div.append(imgdiv,namediv);
-            document.getElementById("main").append(div);
-        });
-    }
-    var btmdiv = document.createElement("div");
-    btmdiv.setAttribute("id","btmdiv");
-    var totaldiv = document.createElement("div");
-    totaldiv.setAttribute("id", "totaldiv");
-    var h2 = document.createElement("h2");
-    h2.innerText = "Total";
-    var totalval = document.createElement("h2");
-    totalval.innerText = "$"+ total+".00";
-    var button = document.createElement("button");
-    button.innerText = 'Check Out';
-    totaldiv.append(h2, totalval);
-    document.getElementById("main").append(btmdiv,totaldiv,button);
 
-</script>
+</style>
+
+<body>
+    <div id="page-content">
+        <div id="navbar"></div>
+        <div id="footer"></div>
+    </div>
+    </div>
+    <!-- Header goes here-->
+
+
+</body>
+
+</html>
+
+<script src="cart.js"></script>

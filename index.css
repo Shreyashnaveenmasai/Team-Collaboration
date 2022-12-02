@@ -107,7 +107,7 @@ header {
     text-decoration: none;
     font-weight: 400;
     color: #000;
-    font-size: 18.3px;
+    font-size: 15.3px;
     letter-spacing: 3.2PX;
     padding: 0px 18px;
 }
@@ -169,7 +169,7 @@ button {
     font-size: 16px;
     letter-spacing: 3px;
     font-weight: 400;
-    line-height: 50px;
+    line-height: 40px;
     background-color: #000;
     text-transform: capitalize;
 }
@@ -219,14 +219,14 @@ button {
 /* ----------bannerimageslider--------------- */
 .banner {
     width: 100%;
-    height: 679px;
+    height: 550px;
     position: relative;
     overflow: hidden;
     top: 279px;
 }
 .bannernext {
     width: 100%;
-    height: 679px;
+    height: 480px;
     position: relative;
     overflow: hidden;
     top: 12px;
@@ -236,7 +236,7 @@ button {
 .sliderimgs {
     background-size: cover;
     width: 100%;
-    height: 679px;
+    height: 550px;
     position: absolute;
     top: 0;
 }
@@ -255,31 +255,31 @@ button {
 }
 .overlay {
     width: 100%;
-    height: 679px;
+    height: 550px;
     position: absolute;
     background: linear-gradient(rgba(.4, 0, 0, .03), rgba(0.03, 0, 0, 0.6));
     top: 0;
 }
 
 .content {
-    margin: 200px 0;
+    margin: 150px 0;
     text-align: center;
     color: #fff;
 }
 
 .content h1 {
-    font-size: 100px;
+    font-size: 65px;
     text-transform: uppercase;
     font-family: auto;
 }
 .content p {
-    font-size: 23px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 3%;
 }
 .content h3 {
-    font-size: 26px;
+    font-size: 23px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 300;
@@ -293,11 +293,11 @@ button {
     display: none;  
 }
 .content button a {
-    padding: 15px 30px;
+    padding: 12px 28px;
     letter-spacing: 3px;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 10px;
     background-color: #fff;
     font-weight: 600;
@@ -310,7 +310,7 @@ button {
     border-top: 1px solid #e8e8e1;
 }
 .categoryheading h1{
-    font-size: 44px;
+    font-size: 34px;
     font-family: auto;
     font-weight: 400;
 }
@@ -330,7 +330,7 @@ button {
     color: #000;
 }
 .catgry1 h5{
-    font-size: 22px;
+    font-size: 18px;
     text-transform: uppercase;
     padding-bottom: 40px;
     font-weight: 400;
@@ -351,7 +351,7 @@ button {
     text-align: center;
 }
 .arrivalheading h1{
-    font-size: 44px;
+    font-size: 36px;
     font-family: auto;
     font-weight: 400;
 }
@@ -366,32 +366,34 @@ button {
     align-items: self-end;
 }
  .catgry1 h4{
-    font-size: 21px;
+    font-size: 16px;
     font-family: sans-serif;
     text-transform: uppercase;
     padding-bottom: 10px;
     font-weight: 400;
-    letter-spacing: .025em;
+    line-height: 27px;
+    letter-spacing: .095em;
 }
 #arrivalbtn{
     letter-spacing: 3px;
     border: none;
-    padding: 13px 15px;
+    padding: 7px 15px;
     cursor: pointer;
     margin-top: 1.4%;
     margin-bottom: 3%;
 }
 #arrivalbtn a{
     color: #000;
-    font-size: 19px;
+    font-size: 16px;
     text-decoration: none;
     font-weight: 400;
-    padding: 10px 18px;
+    padding: 7px 15px;
     border: 1px solid #e8e8e1;
     background-color: transparent;
 }
 .catgry1 span{
-    font-size: 20px;
+    font-size: 19px;
+    font-weight: 400;
 }
 .catgry1 #textdecor{
     text-decoration: line-through;
@@ -412,9 +414,10 @@ button {
     padding-left: 20px;
     align-items: self-end;
     padding-bottom: 4%;
+    margin: 10px;
 }
 .trendcategory .catgry1 a img{
-    height:300px;
+    height:223px;
     animation: fade-in 1s cubic-bezier(.26,.54,.32,1) 0s forwards;
     transition: transform .3s ease;
 }
@@ -424,25 +427,17 @@ button {
 }
 /* --------------cards--------- */
 .indexcard{
-    width: 540;
-    height: 600;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
     position: relative;
     overflow: hidden;
     top: 299px;
-    padding-bottom: 22%;
-}
-.indexcardimg {
-    background-size: cover;
-    width:530;
-    height:600px;
-    top: 0;
+    margin-bottom: 25%;
 }
 #indexcardimages {
-    width: 540px;
-    height: 100%;
+    width: 428px;
+    height:500px;
     opacity: 1;
     -webkit-transform: scale(1);
 	transform: scale(1);
@@ -454,8 +449,8 @@ button {
 	transform: scale(1.3);
 }
 .indexcardoverlay{
-    width: 540px;
-    height: 600px;
+    width: 428px;
+    height: 500px;
     position: absolute;
     background: linear-gradient(rgba(.4, 0, 0, .03), rgba(0.03, 0, 0, 0.6));
     top: 0;
@@ -467,13 +462,13 @@ button {
 }
 
 .indexcardinner1 h4 {
-    font-size: 31px;
+    font-size: 21px;
     letter-spacing: 3PX;
     font-weight: 400;
     text-transform: uppercase;
 }
 .indexcardinner1 h1 {
-    font-size: 62px;
+    font-size: 47px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: auto;
@@ -481,17 +476,18 @@ button {
     line-height: 71px;
 }
 .indexcardinner1 h2 {
-    font-size: 29px;
+    font-size: 20px;
     text-transform:capitalize;
     letter-spacing: 2px;
+    line-height: 30px;
     margin-bottom: 5%;
 }
 .indexcardinner1 button a {
-    padding: 15px 30px;
+    padding: 11px 26px;
     letter-spacing: 3px;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0 10px;
     background-color: #fff;
     font-weight: 600;
@@ -532,8 +528,8 @@ button {
         padding-top: 14px;
     }
     .navbar_a {
-        font-size: 14.9px;
-        padding: 0px 15px;
+        font-size: 13px;
+        padding:0px 15px;
     }
     #navbarlink>div {
         margin: 0px 20px;
@@ -561,7 +557,7 @@ button {
         height: 190px;
     }
     .categoryheading h1 {
-        font-size: 50px;
+        font-size: 35px;
         font-weight: 500;
     }
     .categoryheading {

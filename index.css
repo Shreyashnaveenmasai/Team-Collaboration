@@ -379,7 +379,7 @@ button {
     padding: 13px 15px;
     cursor: pointer;
     margin-top: 1.4%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 #arrivalbtn a{
     color: #000;
@@ -412,6 +412,15 @@ button {
     padding-left: 20px;
     align-items: self-end;
     padding-bottom: 4%;
+}
+.trendcategory .catgry1 a img{
+    height:300px;
+    animation: fade-in 1s cubic-bezier(.26,.54,.32,1) 0s forwards;
+    transition: transform .3s ease;
+}
+.trendcategory catgry1 img:hover{
+        transform: scale(1.03);
+        transition: all .8s ease;
 }
 /* --------------cards--------- */
 .indexcard{

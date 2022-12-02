@@ -79,7 +79,8 @@
             <!-- contact info end -->
 
             <div id="email">
-                <input class="emailbtn" type="text" placeholder="Email">
+                <!-- <input class="emailbtn" type="text" placeholder="Email"> -->
+                <input type="text" id="emailbtn" placeholder="Email">
             </div>
 
             <div id="offers">
@@ -103,7 +104,7 @@
             </div>
 
             <div id="apartment">
-                <input class="ht2" type="text" placeholder="Apartment,suite,etc.(optional)">
+                <input id="ht2" type="text" placeholder="Apartment,suite,etc.(optional)">
             </div>
 
             <div id="zip_code">
@@ -121,7 +122,7 @@
             <div id="footer">
 
                 <button id="rtnCart" class="footer_button">Return to cart</button>
-                <button id="gotoshipping" class="footer_button">Continue to Shipping</button>
+                <button id="gotoshipping">Continue to Shipping</button>
             </div>
 
         </div>
@@ -172,12 +173,20 @@
 <script>
     var sum = localStorage.getItem("sum") || 0;
     var totalAfterPromo = sum;
+    localStorage.setItem("totalAfterPromo", sum);
     console.log(sum);
     document.getElementById("total-before-promo").innerText =  `$${sum}`;
     var final = document.getElementById("total-after-promo");
     final.innerText = `$${totalAfterPromo}`;
   document.getElementById("gotoshipping").addEventListener("click",gotoshipping);
   function gotoshipping(){
+    var userdata =[];
+    var userobj ={
+        email: document.getElementById("emailbtn").value,
+        add : document.querySelector(".ht1").value,
+    };
+    userdata.push(userobj);
+    localStorage.setItem("Userinfo",JSON.stringify(userdata));
     window.location.href="shipping.html";
   }
 
@@ -200,10 +209,12 @@
         sum = Math.round(sum * 100)/100;
         console.log(sum );
         final.innerText = `$${sum}`;
+        localStorage.setItem("totalAfterPromo", sum);
     }else{
         alert("Promo Code not Valid");
     }
 
   }
+
 
 </script>

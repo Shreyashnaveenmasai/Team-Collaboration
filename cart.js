@@ -18,19 +18,19 @@
             detail:"ALEXANDER MCQUEEN OVERSIZED LEATHER SNEAKER",
     }];
 // data[i].qty * data[i].price;
-var data = [
-    {
-        qty: 1,
-        price: 600,
-    },
-    {
-        qty: 1,
-        price: 800,
-    },
-    {
-        qty: 1,
-        price: 1000,
-    }];
+// var data = [
+//     {
+//         qty: 1,
+//         price: 600,
+//     },
+//     {
+//         qty: 1,
+//         price: 800,
+//     },
+//     {
+//         qty: 1,
+//         price: 1000,
+//     }];
 localStorage.setItem("sum",0);
 localStorage.setItem("prodList", JSON.stringify(cartarr));
 var prodList = JSON.parse(localStorage.getItem("prodList")) || [];
@@ -220,7 +220,7 @@ function displayCart(data){
     total = Math.round(total * 100)/100;
     divTotal.innerText = `$${total}`;
     //logic for total is sum of all the product;
-
+    localStorage.setItem("sum", total);
     divsubtotal.append(divSubText, divTotal);
 
     var smalltext = document.createElement("p");

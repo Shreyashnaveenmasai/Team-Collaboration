@@ -1,34 +1,41 @@
 
 const sliders = document.querySelectorAll(".slider");
-    // interval between switching images
-    // can't be less than your animation duration in css!
-    const interval = 4000;
-    // if you don't want to first animation last longer than other animations  
-    // set animDuration (in miliseconds) to your value of animation duration in css
-    const animDuration = 1000;
-    // for (let i = 0; i < sliders.length; ++i) {
-    //   const slider = sliders[i];
-    //   const dots = slider.querySelector(".dots");
-    //   const sliderImgs = slider.querySelectorAll(".img");
-  
-      // let currImg = 0;
-      // let prevImg = sliderImgs.length - 1;
-      // let intrvl;
-      // let timeout;
+// interval between switching images
+// can't be less than your animation duration in css!
+const interval = 4000;
+// if you don't want to first animation last longer than other animations  
+// set animDuration (in miliseconds) to your value of animation duration in css
+const animDuration = 1000;
 
-    var slideimg=document.getElementById("slideimg");
-    var img=new Array(
-        "img/bagimage3.png",
-        "img/download.jfif",
-        "img/bagimag2.webp"
-    );
-    var length=images.length;
-    var i=0;
-    function sliderimg(){
-      if(i>length-1){
-      i=0;
-      }
-    slideimg.src=images[i];
-    i++;
-    }
-    setTimeout('sliderimg()', 3000);
+
+// -------------bannerslider
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) { myIndex = 1 }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+var myIndexnext = 0;
+carouselnext();
+
+function carouselnext() {
+  var y = document.getElementsByClassName("mySlidesnext");
+  for (var i = 0; i < y.length; i++) {
+    y[i].style.display = "none";
+  }
+  myIndexnext++;
+  if (myIndexnext > y.length) { myIndexnext = 1 }
+  y[myIndexnext - 1].style.display = "block";
+  setTimeout(carouselnext, 3000); // Change image every 2 seconds
+}
+
+
+

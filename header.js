@@ -15,7 +15,24 @@ function divclfade() {
 }
 cll.addEventListener("mouseleave", divclfade);
 
-// ---------fixed nav
+// -------------shoeslinkhover
+var btn2 = document.getElementById("shofade")
+function shofade() {
+    var sll = document.getElementById("shoes_hover");
+    sll.style.display = "grid";
+    sll.style.background = "white";
+}
+btn2.addEventListener("mouseover", shofade);
+
+
+
+var sll = document.getElementById("shoes_hover");
+function shoclfade() {
+        sll.style.display = "none";
+}
+sll.addEventListener("mouseleave", shoclfade);
+
+// -------------------fixed nav
 window.onscroll = function() {myfixFunction()};
 
 // Get the navbar

@@ -8,6 +8,7 @@ function myFunction() {
   }
   document.querySelector("form").addEventListener("submit",getdata);
   let spdata = JSON.parse(localStorage.getItem("userData")) || [];
+  var Cnt = false || localStorage.getItem("cnt");
   
   function getdata(){
     event.preventDefault(); 
@@ -30,8 +31,10 @@ function myFunction() {
     console.log(spdata);
   
     window.location.href="signin.html"
-  
+    Cnt = false;
     localStorage.setItem("userData", JSON.stringify(spdata))
+    localStorage.setItem("cnt", Cnt);
+  
   }
 
  

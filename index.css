@@ -47,7 +47,7 @@ header {
 }
 
 .header div:first-child img {
-    height: 40px;
+    height: 35px;
 }
 
 .headericon a {
@@ -169,7 +169,9 @@ header {
 .navbar_c {
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    padding-top: 14px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    padding-bottom: 13px;
 
 }
 .navbar_c a {
@@ -197,7 +199,7 @@ button {
 #slider {
     overflow: hidden;
     position: relative;
-    top: 259px;
+    top: 250px;
 }
 
 #slider figure {
@@ -209,16 +211,16 @@ button {
 }
 
 #slider figure div {
-    height: 42px;
     float: left;
     width: 20%;
     text-align: center;
     text-size-adjust: 100%;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 1px;
     font-weight: 400;
-    line-height: 42px;
+    height: 43px;
+    line-height: 44px;
     background-color: #000;
     text-transform: capitalize;
 }
@@ -275,7 +277,7 @@ button {
     height: 550px;
     position: relative;
     overflow: hidden;
-    top: 259px;
+    top: 250px;
 }
 
 .bannernext {
@@ -890,6 +892,15 @@ font-family: serif;
     .banner{
         top: 335px;
     }
+    .newarrheading {
+        margin-top: 26%;
+    }
+    .arrivalimgsection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .arivalsection{
+        padding-left: 0;
+    }
 
 }
 
@@ -995,5 +1006,21 @@ font-family: serif;
     .child {
         grid-template-columns: repeat(1, 1fr);
 
+    }
+    .newarrheading {
+        margin-top: 0%;
+    }
+    .arrivalimgsection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .newarrheading h1 {
+        font-size: 40px;
+        margin-top: 5%;
+    }
+    .newarrpage h5 {
+        font-size: 12px;
+    }
+    .arrspan {
+        right: 8%;
     }
 }

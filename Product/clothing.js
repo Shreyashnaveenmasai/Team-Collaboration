@@ -1,5 +1,6 @@
 var data = [
-    {
+    {   
+        qty: 1,
         discount: "Extra 20% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/aap9VKrZwOff2EzzMvDWfugXcJhbPyfF-25_large.jpg?v=1669532929",
         brand:"BCBMAXAZRIA",
@@ -7,7 +8,8 @@ var data = [
         mrp_price: "$260.99",
         best_price : "$92.99"
     },
-    {
+    {   
+        qty: 1,
         discount: "Extra 12% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "REAL CASHMERE",
@@ -15,7 +17,8 @@ var data = [
         mrp_price:"89.99",
         best_price:"$29.99"
     },
-    {
+    {   
+        qty: 1,
         discount: "Extra 10% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/4292666_large.jpg?v=1658446282",
         brand: "MICHAEL MICHAEL KORS",
@@ -24,6 +27,7 @@ var data = [
         best_price:"$119.99"
     },
     {
+        qty: 1,
         discount: "Extra 20% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/77216-77219_b_zps3t3yr5lr_large.jpg?v=1669660348",
         brand: "CASHMERE COMPANY",
@@ -31,7 +35,8 @@ var data = [
         mrp_price:"89.99",
         best_price:"$29.99"
     },
-    {
+    {   
+        qty: 1,
         discount: "Extra 12% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1411538632_RLLZ_2_large.jpg?v=1669914967",
         brand: "LEA & VIOLA",
@@ -39,7 +44,8 @@ var data = [
         mrp_price:"200.99",
         best_price:"$134.99"
     },
-    {
+    {   
+        qty: 1,
         discount: "Extra 12% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "METTE",
@@ -47,7 +53,8 @@ var data = [
         mrp_price:"89.99",
         best_price:"$29.99"
     },
-    {
+    {   
+        qty: 1,
         discount: "Extra 12% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "REAL CASHMERE",
@@ -55,7 +62,8 @@ var data = [
         mrp_price:"89.99",
         best_price:"$29.99"
     },
-    {
+    {   
+        qty: 1,
         discount: "Extra 12% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "REAL CASHMERE",
@@ -63,7 +71,8 @@ var data = [
         mrp_price:"89.99",
         best_price:"$29.99"
     },
-    {
+    {   
+        qty: 1,
         discount: "Extra 12% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "REAL CASHMERE",
@@ -71,7 +80,8 @@ var data = [
         mrp_price:"89.99",
         best_price:"$29.99"
     },
-    {
+    {   
+        qty: 1,
         discount: "Extra 12% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "REAL CASHMERE",
@@ -79,7 +89,8 @@ var data = [
         mrp_price:"89.99",
         best_price:"$29.99"
     },
-    {
+    {   
+        qty: 1,
         discount: "Extra 12% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "REAL CASHMERE",
@@ -87,7 +98,8 @@ var data = [
         mrp_price:"89.99",
         best_price:"$29.99"
     },
-    {
+    {   
+        qty: 1,
         discount: "Extra 12% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "REAL CASHMERE",
@@ -134,7 +146,7 @@ function DisplayClothing(data){
          button.innerText = "ADD TO CART";
          button.setAttribute("class", "cartbtn");
         button.addEventListener("click", function () {
-         addcart(ele.id, i);
+         addcart(ele);
 
         
 });
@@ -159,9 +171,13 @@ data.map((elem) => {
   id++;
 });
 
+
 var productIncart = JSON.parse(localStorage.getItem("newcart")) || [];
 console.log(productIncart);
-function addcart(id, i) {
+var cartdata = [];
+function addcart(element) {
+    cartdata.push(element);
+    localStorage.setItem("prodList", JSON.stringify(cartdata));
   if (productIncart.length == 0) {
     data[i].qty = +1;
     productIncart.push(data[i]);

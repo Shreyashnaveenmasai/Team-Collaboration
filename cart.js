@@ -1,42 +1,30 @@
-        var cartarr = [
-            {
-            image_url:"https://assets.ajio.com/medias/sys_master/root/20220513/xlLS/627e266eaeb26921af76fb97/-288Wx360H-463292644-grey-MODEL.jpg",
-            proName:"Shirt",
-            price: 800,
-            detail:"ALEXANDER MCQUEEN OVERSIZED LEATHER SNEAKER",
-            },
-            {
-            image_url: "https://cdn.shopify.com/s/files/1/0752/6435/products/IMG_0123_2653a840-1950-40c4-9534-357696378291.jpg?v=1663818590",
-            proName: "Printed Shirt",
-            price: 1000,
-            detail:"ALEXANDER MCQUEEN OVERSIZED LEATHER SNEAKER",
-        },
-        {
-            image_url: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/179f5214-4241-4d21-9126-107890c1c1fa/sb-long-sleeve-skate-t-shirt-zbRRls.png",
-            proName: "T shirt",
-            price: 600,
-            detail:"ALEXANDER MCQUEEN OVERSIZED LEATHER SNEAKER",
-    }];
-// data[i].qty * data[i].price;
-// var data = [
-//     {
-//         qty: 1,
-//         price: 600,
-//     },
-//     {
-//         qty: 1,
-//         price: 800,
-//     },
-//     {
-//         qty: 1,
-//         price: 1000,
-//     }];
-localStorage.setItem("sum",0);
-localStorage.setItem("prodList", JSON.stringify(cartarr));
+    //     var cartarr = [
+    //         {
+    //         image_url:"https://assets.ajio.com/medias/sys_master/root/20220513/xlLS/627e266eaeb26921af76fb97/-288Wx360H-463292644-grey-MODEL.jpg",
+    //         brand:"Shirt",
+    //         price: 800,
+    //         name: "ALEXANDER MCQUEEN OVERSIZED LEATHER SNEAKER",
+    //         qty:1,
+    //         },
+    //         {
+    //         image_url: "https://cdn.shopify.com/s/files/1/0752/6435/products/IMG_0123_2653a840-1950-40c4-9534-357696378291.jpg?v=1663818590",
+    //         brand: "Printed Shirt",
+    //         price: 1000,
+    //         name: "ALEXANDER MCQUEEN OVERSIZED LEATHER SNEAKER",
+    //         qty:1,
+    //     },
+    //     {
+    //         image_url: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/179f5214-4241-4d21-9126-107890c1c1fa/sb-long-sleeve-skate-t-shirt-zbRRls.png",
+    //         brand: "T shirt",
+    //         price: 600,
+    //         name: "ALEXANDER MCQUEEN OVERSIZED LEATHER SNEAKER",
+    //         qty:1,
+    // }];
+
+localStorage.setItem("sum", 0);
 var prodList = JSON.parse(localStorage.getItem("prodList")) || [];
 var sum = localStorage.getItem("sum") || 0;
 console.log(sum);
-
 var container = document.createElement("div");
 container.setAttribute("id", "container");
 
@@ -138,14 +126,14 @@ function displayCart(data){
         var aTitle = document.createElement("a");
         aTitle.setAttribute("href", "#");
         var title = document.createElement("p");
-        title.innerText = e.detail;
+        title.innerText = e.name;
         aTitle.append(title);
         prodTitle.append(aTitle);
 
         var divColorSize = document.createElement("div");
         divColorSize.classList.add("color-size")
         var smallDetails = document.createElement("p");
-        smallDetails.innerText = e.proName;
+        smallDetails.innerText = e.brand;
         divColorSize.append(smallDetails);
 
         var divRemBtn = document.createElement("div");

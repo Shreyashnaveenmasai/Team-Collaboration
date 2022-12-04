@@ -647,6 +647,11 @@ font-family: serif;
     vertical-align: middle;
     width: auto;
 }
+.child a:hover{
+    background-color: #000;
+    color: #fff;
+    transition: .3s ease-in;
+}
 .child p {
     box-sizing: border-box;
     cursor: auto;
@@ -739,13 +744,12 @@ font-family: serif;
     display: block;
   }
   .arivalsection {
-    display: grid;
+    display: flex;
     justify-content: center;
     margin-top: 2%;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: center;
+    padding-left:12%;
+    justify-content: space-evenly;
     justify-items: center;
-    padding-left: 6%;
 }
   .arrivalimages{
     display: grid;
@@ -755,19 +759,45 @@ font-family: serif;
     position: absolute;
     background-color: red;
     color: #fff;
-    text-align: center;
-    right: 30%;
-    width:200px;
+    padding: 4px;
+    right: 25%;
+    width:150px;
   }
-  .arrspan p{
-    text-align: center;
+  .arrivalimgsection{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .arrivalimages a{
+    text-decoration: none;
   }
   .arrivalimages p{
     width: 80%;
     padding: 2% 0;
+    font-size: 13px;
+    color: #000;
   }
   .arrivalimages  img{
     height: 200px;
+  }
+  .arrivalimages  img:hover{
+    height: 230px;
+    transition: .3s ease-out;
+  }
+  .arrivalimages h5{
+    color: #0094ff;
+    font-size: 20px;
+  }
+  .arrivalimages h4{
+    margin-bottom: 6%;
+    color: #000;
+    font-size: 17px;
+  }
+  .arrspan h3{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
   }
 /* .foresponsive{
     display: none;

@@ -45,7 +45,9 @@ header {
 .headericon input::placeholder {
     font-size: 17px;
 }
-
+.headericon i{
+    padding-top: 3px;
+}
 .header div:first-child img {
     height: 35px;
 }

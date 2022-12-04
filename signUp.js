@@ -28,13 +28,11 @@ function myFunction() {
   
     spdata.push(obj);
   
-    console.log(spdata);
-  
     window.location.href="signin.html"
     Cnt = false;
     localStorage.setItem("userData", JSON.stringify(spdata))
     localStorage.setItem("cnt", Cnt);
-  
   }
+
 
  

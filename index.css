@@ -468,7 +468,9 @@ button {
     border: 1px solid #e8e8e1;
     background-color: transparent;
 }
-
+#arrivalbtn a:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
 .catgry1 span {
     font-size: 19px;
     font-weight: 400;
@@ -585,6 +587,16 @@ button {
     color: rgb(0, 0, 0);
     cursor: pointer;
 }
+.indexcardinner1 button a:hover{
+    background-color: #000;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+.content button a:hover{
+    background-color: #000;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
 
 /* -----------abovefooter--------- */
 .child {
@@ -598,6 +610,12 @@ button {
 .child div {
     margin: 10px;
     text-align: center;
+    padding-bottom: 5%;
+}
+.child div:hover{
+    cursor: pointer;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    transition: .3s ease-out;
 }
 
 .child img {
@@ -638,7 +656,119 @@ font-family: serif;
     letter-spacing: 1.3px;
     user-select: text !important;
 }
-
+/* -----newarrivals-------- */
+.newarrheading{
+    display: flex;
+    justify-content: center;
+}
+.newarrheading h1{
+    font-family:auto;
+    font-weight: 500;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 21%;
+}
+.newarrpage{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+.newarrpage h5{
+    font-size: 20px;
+}
+.newarrpage select{
+    text-align: center;
+    font-weight: 500;
+}
+.newarrpage option{
+    outline: none;
+}
+.dropdown-check-list {
+    display: inline-block;
+  }
+  
+  .dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .dropdown-check-list .anchor:after {
+    position: absolute;
+    content: "";
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  
+  .dropdown-check-list .anchor:active:after {
+    right: 8px;
+    top: 21%;
+  }
+  
+  .dropdown-check-list ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  .dropdown-check-list ul.items li {
+    list-style: none;
+    margin: 5px;
+    font-size: 14px;
+  }
+  .dropdown-check-list ul.items li input{
+    margin-right: 3px;
+  }
+  .dropdown-check-list.visible .anchor {
+    color: #0094ff;
+  }
+  
+  .dropdown-check-list.visible .items {
+    display: block;
+  }
+  .arivalsection {
+    display: grid;
+    justify-content: center;
+    margin-top: 2%;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    justify-items: center;
+    padding-left: 6%;
+}
+  .arrivalimages{
+    display: grid;
+    position: relative;
+  }
+  .arrspan{
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    right: 30%;
+    width:200px;
+  }
+  .arrspan p{
+    text-align: center;
+  }
+  .arrivalimages p{
+    width: 80%;
+    padding: 2% 0;
+  }
+  .arrivalimages  img{
+    height: 200px;
+  }
 /* .foresponsive{
     display: none;
 } */

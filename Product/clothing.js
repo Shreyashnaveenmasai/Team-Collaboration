@@ -5,8 +5,8 @@ var data = [
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/aap9VKrZwOff2EzzMvDWfugXcJhbPyfF-25_large.jpg?v=1669532929",
         brand:"BCBMAXAZRIA",
         name: "CROPPED LIQUID PUFFER WOMENS METALLIC CROPPED PUFFER COAT",
-        mrp_price: "$260.99",
-        best_price : "$92.99"
+        mrp_price: "260.99",
+        best_price : 92.99,
     },
     {   
         qty: 1,
@@ -14,8 +14,8 @@ var data = [
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "REAL CASHMERE",
         name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
-        mrp_price:"89.99",
-        best_price:"$29.99"
+        mrp_price: "89.99",
+        best_price: 29.99,
     },
     {   
         qty: 1,
@@ -24,7 +24,7 @@ var data = [
         brand: "MICHAEL MICHAEL KORS",
         name:"MICHAEL MICHAEL KORS WOMEN'S BONE WHITE DOWN SLEEVELESS PUFFER VEST WITH REMOVABLE HOOD",
         mrp_price:"219.99",
-        best_price:"$119.99"
+        best_price: 119.99,
     },
     {
         qty: 1,
@@ -33,7 +33,7 @@ var data = [
         brand: "CASHMERE COMPANY",
         name:"CASHMERE BLEND BEIGE V-NECK SWEATER",
         mrp_price:"89.99",
-        best_price:"$29.99"
+        best_price: 29.99,
     },
     {   
         qty: 1,
@@ -42,78 +42,81 @@ var data = [
         brand: "LEA & VIOLA",
         name:"LEA & VIOLA QUILTED & CROCHETED TEDDY JACKET",
         mrp_price:"200.99",
-        best_price:"$134.99"
+        best_price: 134.99,
     },
     {   
         qty: 1,
-        discount: "Extra 12% off in Cart",
+        discount: "Extra 20% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "METTE",
         name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
         mrp_price:"89.99",
-        best_price:"$29.99"
+        best_price: 29.99,
     },
     {   
         qty: 1,
-        discount: "Extra 12% off in Cart",
+        discount: "Extra 20% off in Cart",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/zUZlhFwSUlhmvH5jTeWkFzAbnrsnPwEk-25_large.jpg?v=1669435533",
+        brand: "REAL CASHMERE",
+        name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
+        mrp_price:"89.99",
+        best_price: 134.99,
+    },
+    {   
+        qty: 1,
+        discount: "Extra 20% off in Cart",
         image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
         brand: "REAL CASHMERE",
         name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
         mrp_price:"89.99",
-        best_price:"$29.99"
+        best_price: 134.99,
     },
     {   
         qty: 1,
-        discount: "Extra 12% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
-        brand: "REAL CASHMERE",
-        name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
-        mrp_price:"89.99",
-        best_price:"$29.99"
+        discount: "Extra 20% off in Cart",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/4306659_large.jpg?v=1668479383",
+        brand: "TED BAKER",
+        name:"TED BAKER MEN'S HEATHER GRAY DROVERS ZIP FRONT FUNNEL NECK SWEATSHIRT",
+        mrp_price:"285.99",
+        best_price: 165.99,
     },
     {   
         qty: 1,
-        discount: "Extra 12% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
-        brand: "REAL CASHMERE",
-        name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
-        mrp_price:"89.99",
-        best_price:"$29.99"
+        discount: "Extra 20% off in Cartt",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/RSbCBbwck2NICdJUsxFND7AwvjLiJV4R-25_large.jpg?v=1669422048",
+        brand: "TAHARI",
+        name:"NIKKI WOMENS WOOL BLEND WRAP COAT WOOL COAT",
+        mrp_price:"105.99",
+        best_price: 78.99,
     },
     {   
         qty: 1,
-        discount: "Extra 12% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
-        brand: "REAL CASHMERE",
-        name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
-        mrp_price:"89.99",
-        best_price:"$29.99"
+        discount: "Extra 20% off in Cart",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1925359_large.jpg?v=1654588277",
+        brand: "BARRIERS",
+        name:"BARRIERS ORANGE BOBBY SEALE PULLOVER HOODIE",
+        mrp_price:"510.99",
+        best_price: 285.99,
     },
     {   
         qty: 1,
-        discount: "Extra 12% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
-        brand: "REAL CASHMERE",
-        name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
-        mrp_price:"89.99",
-        best_price:"$29.99"
-    },
-    {   
-        qty: 1,
-        discount: "Extra 12% off in Cart",
-        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/83728-83730_b-X3_large.jpg?v=1669794585",
-        brand: "REAL CASHMERE",
-        name:"REAL CASHMERE DARK BLUE HALF ZIP FINE CASHMERE BLEND MENS SWEATER",
-        mrp_price:"89.99",
-        best_price:"$29.99"
+        discount: "Extra 20% off in Cart",
+        image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1010942624_RLLZ_2_large.jpg?v=1669915059",
+        brand: "AUTUMN CASHMERE",
+        name:"AUTUMN CASHMERE CHECKERED WOOL & CASHMERE-BLEND CREWNECK SWEATERT",
+        mrp_price:"460.99",
+        best_price: 203.99,
     },
 
 ]
+
 var datafromlocal=JSON.parse(localStorage.getItem("new Cart")) || [];
 DisplayClothing(data);
 function DisplayClothing(data){
     document.querySelector('#clothing').innerHTML="";
     data.map (function (ele,i){
+
+        
         var div=document.createElement("div");
         var discount=document.createElement("p");
         var dis_span = document.createElement("span");
@@ -129,36 +132,39 @@ function DisplayClothing(data){
         var name = document.createElement("h4");
         name.innerText = ele.name;
         
-        var best_price = document.createElement("h4");
-        sub_best = document.createElement("span");
-        sub_best.innerText = "Best Price";
-         sub_best_price = document.createElement("span");
-         sub_best_price.innerText = ele.best_price;
-         best_price.append(sub_best, sub_best_price);
-        
         var mrp_price = document.createElement("h5");
         sub_mrp = document.createElement("span");
         sub_mrp.innerText = "MRP Price";
-         sub_mrp_price = document.createElement("span");
-         sub_mrp_price.innerText = ele.mrp_price;
-         mrp_price.append(sub_mrp, sub_mrp_price);
+        sub_mrp_price = document.createElement("span");
+        sub_mrp_price.innerText ="$"+ ele.mrp_price;
+        mrp_price.append(sub_mrp, sub_mrp_price);
+
+        var best_price = document.createElement("h4");
+        sub_best_price = document.createElement("span");
+        sub_best_price.innerText = "Best Price";
+         sub_best_price = document.createElement("span");
+         sub_best_price.innerText = "$"+ ele.best_price;
+         best_price.append(sub_best_price, sub_best_price);
+        
+        
          var button = document.createElement("button");
          button.innerText = "ADD TO CART";
          button.setAttribute("class", "cartbtn");
         button.addEventListener("click", function () {
-         addcart(ele);
+         addcart(ele,ele.id,i);
 
         
 });
 
 div.append(
+    
     discount,
     image,
     brand,
     name,
-    
-    best_price,
     mrp_price,
+    best_price,
+    
     button
   );
   document.querySelector("#clothing").append(div);
@@ -176,7 +182,7 @@ var productIncart = JSON.parse(localStorage.getItem("newcart")) || [];
 console.log(productIncart);
 var cartdata = [];
 function addcart(element) {
-    cartdata.push(element);
+    cartdata.push(element,ele.id,i);
     localStorage.setItem("prodList", JSON.stringify(cartdata));
   if (productIncart.length == 0) {
     data[i].qty = +1;
@@ -233,7 +239,7 @@ function HighToLow() {
       });
       DisplayDressing(data);
   }
-  console.log(clothing)
+  console.log(clothing);
   var a=b=c=d=e=f=g=h=0; var count1=0;
  function funclick1(){
      if(count1==0){
@@ -330,7 +336,7 @@ function abc1(){
    if(a==1){
      var w=[]
      data.map(function(ele){
-       if(ele.company_name=="MKT: 3M india Ltd"){
+       if(ele.brand=="TAHARI"){
 
         w.push(ele);
          DisplayDressing(w);
@@ -344,7 +350,7 @@ function abc2(){
    if(b==1){
      var x=[]
      data.map(function(ele){
-        if(ele.company_name=="MKT: Prime Medica Promotion Pvt.Ltd"){
+        if(ele.brand=="BARRIERS"){
           x.push(ele);
           DisplayDressing(x);
         }
@@ -357,7 +363,7 @@ function abc3(){
     if(c==1){
      var y=[];
      data.map(function(ele){
-        if(ele.company_name=="Ramaraju Surgical Cotton Mills Ltd"){
+        if(ele.brand=="TED BAKER"){
           y.push(ele);
           DisplayDressing(y);
         }
@@ -370,7 +376,7 @@ function abc4(){
     if(d==1){
       var z=[];
       data.map(function(ele){
-        if(ele.company_name=="MKT: Zywie Pharmaceutical Pvt.Ltd"){
+        if(ele.brand=="REAL CASHMERE"){
           z.push(ele);
           DisplayDressing(z);
         }
@@ -385,7 +391,7 @@ function abc5(){
     if(e==1){
       var w=[];
       data.map(function(ele){
-        if(ele.company_name=="Mkt: Johnson & Johnson Pvt Ltd"){
+        if(ele.brand=="CASHMERE COMPANY"){
           w.push(ele);
           DisplayDressing(w);
         }
@@ -399,7 +405,7 @@ function abc6(){
     if(f==1){
       var z=[];
       data.map(function(ele){
-        if(ele.company_name=="MKT: Datt Mediproducts Pvt.Ltd"){
+        if(ele.brand=="MICHAEL MICHAEL KORS"){
           z.push(ele);
           DisplayDressing(z);
         }
@@ -413,7 +419,7 @@ function abc7(){
     if(g==1){
       var z=[];
       data.map(function(ele){
-        if(ele.company_name=="Mkt: Essity India Pvt Ltd"){
+        if(ele.brand=="BCBMAXAZRIA"){
           z.push(ele);
           DisplayDressing(z);
         }
@@ -427,7 +433,7 @@ function abc8(){
     if(h==1){
       var z=[];
       data.map(function(ele){
-        if(ele.company_name=="MKT: 3M india Ltd"){
+        if(ele.brand=="LEA & VIOLA"){
           z.push(ele);
           DisplayDressing(z);
         }

@@ -157,7 +157,7 @@ function displayCart(data){
 
         var price = document.createElement("div");
         price.classList.add("price");
-        price.innerText = `$${e.price}`;
+        price.innerText = `$${e.best_price}`;
         
         var qty = document.createElement("div");
         qty.classList.add("qty");
@@ -177,7 +177,7 @@ function displayCart(data){
 
         var total = document.createElement("div");
         total.classList.add("total");
-        var totalThis = e.qty * e.price;
+        var totalThis = e.qty * e.best_price;
         totalThis = Math.round(totalThis * 100)/100;
         total.innerText = `$${totalThis}`; //total logic = qty * price
 
@@ -203,7 +203,7 @@ function displayCart(data){
     divTotal.setAttribute("id", "sumtotal");
     var total = 0;
     for(var i=0; i<data.length; i++){
-        total += data[i].qty * data[i].price;
+        total += data[i].qty * data[i].best_price;
     }
     total = Math.round(total * 100)/100;
     divTotal.innerText = `$${total}`;
@@ -265,8 +265,8 @@ function qtyChanged(e, i){
 
 function updateThisTotal(e, i){
     if(e.qty>0){
-        console.log(e.qty, e.price);
-        var totalThis = e.qty * e.price;
+        console.log(e.qty, e.best_price);
+        var totalThis = e.qty * e.best_price;
         totalThis = Math.round(totalThis * 100)/100;
         console.log(totalThis);
         var targetTotal = document.getElementsByClassName("total")[i];
@@ -290,7 +290,7 @@ function updateSubtotal(data){
     console.log(data);
     var total = 0;
     for(var i=0; i<data.length; i++){
-        total += data[i].qty * data[i].price;
+        total += data[i].qty * data[i].best_price;
     }
     total = Math.round(total * 100)/100;
     console.log(total);
